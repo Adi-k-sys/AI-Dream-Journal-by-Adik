@@ -21,7 +21,7 @@ def generate_dream_analysis(dream):
 # Hugging Face API for AI Image Generation (Dream Art)  
 def generate_dream_art(dream):  
     API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2"  
-    headers = {"Authorization": "Bearer hf_xxx"}  # Replace xxx with your Hugging Face API key  
+    headers = {"Authorization": "Bearer hf_xxx "}  # Replace xxx with your Hugging Face API key  
 
     response = requests.post(API_URL, headers=headers, json={"inputs": dream})  
     return response.json()["generated_text"]  
